@@ -11,16 +11,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- nav -->
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+        <a href="#">we are</a>
+        <a href="#">product</a>
+        <a href="#">service</a>
+        <a href="#">clients</a>
+        <a href="#">blog</a>
+    </div>
     <div class="container">
         <header>
             <nav>
-                <a href="#"><i class="icon-list"></i></a>
+                <a href="javacript:void(0)" onclick="openNav()"><i class="icon-list"></i></a>
                 <a href="#"><i class="icon-search"></i></a>
             </nav>
             <section class="title">
                 <h1>Plant <br>is for room</h1>
             </section>
-            <nav class="category">
+            <nav class="category" >
                 <a href="#" id="all">All</a>
                 <a href="#" id="cacti" class="act">Cacti</a>
                 <a href="#" id="inpots">Inpots</a>
