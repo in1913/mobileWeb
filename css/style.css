@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../icomoon/fonts/icomoon.eot?w5w73s');
+    src:  url('../icomoon/fonts/icomoon.eot?w5w73s#iefix') format('embedded-opentype'),
+        url('../icomoon/fonts/icomoon.ttf?w5w73s') format('truetype'),
+        url('../icomoon/fonts/icomoon.woff?w5w73s') format('woff'),
+        url('../icomoon/fonts/icomoon.svg?w5w73s#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    }
+    
+    [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+        
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .icon-blist:before {
+        content: "\e900";
+    }
+    .icon-cart:before {
+        content: "\e901";
+    }
+    .icon-like:before {
+        content: "\e902";
+    }
+    .icon-list:before {
+        content: "\e903";
+    }
+    .icon-search:before {
+        content: "\e904";
+    }
+    .icon-Star-1:before {
+        content: "\e905";
+    }
+    .icon-star:before {
+        content: "\e906";
+    }
+    .icon-user:before {
+        content: "\e907";
+    }
+
+body{
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+    font-family: "Monserrat", sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+nav{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+nav a>i{
+    font-size: 25px;
+}
+.title h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+nav.category{
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 10px;
+}
+nav.category a{
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin-right: 15px;
+    color: #888;
+}
+nav.category a.act{
+    background-color: #D3B398;
+    color: #fff;
+}
+main>p{
+    font-size: 12px;
+    color: #808080;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+main i.fa-arrow-down{
+    margin-left: 5px;
+}
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list>li{
+    display: flex;
+    height: 120px;
+}
+.imgbox{
+    position: relative;
+    margin-right: 20px;
+    width: 120px;
+}
+.imgbox>*{
+    position: absolute;
+    height: 120px;
+}
+.bkboxa,.bkboxb,.bkboxc{
+    width: 120px;
+    height: 70px;
+    z-index: 0;
+    top: 50px;
+    border-radius: 10px;
+}
+.bkboxa{
+    background-color: #f2f7ff;
+}
+.bkboxb{
+    background-color: #fcf0f0;
+}
+.bkboxc{
+    background-color: #EBF4EE;
+}
+.img-fluid{
+    width: 97px;
+    height: 88px;
+    object-fit: cover;
+    top: 32px;
+    left: calc(50% - 48.5px);
+}
+.like{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: #fff;
+    border-radius: 5px;
+    top: 88px;
+    left: 85px;
+}
+.like i.fa-regular{
+    font-size: 13px;
+    color: #bfc2c8;
+}
+.ptitle{
+    display: flex;
+    padding-top: 45px;
+}
+.ptitle h1{
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+.textbox span{
+    color: #ffbb56;
+    font-weight: 500;
+}
+.textbox p.contents{
+    margin: 0;
+    padding: 0;
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+.textbox p.price{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+.advert{
+    height: 120px;
+    position: relative;
+    margin-top: 20px;
+}
+.saly{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    z-index: 2;
+}
+.saly-bak{
+    margin-top: 25px;
+    width: 100%;
+    height: 95px;
+    padding: 30px 25px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #e2e9ff, #ffeaea);
+}
+.saly-bak h1, .saly-bak p{
+    margin: 0;
+    padding: 0;
+}
+.saly-bak h1{
+    font-size: 14px;
+}
+.saly-bak p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #808080;
+}
+.saly-bak span{
+    background: #ffbb56;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 2px;
+    color: #fff;
+}
